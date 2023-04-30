@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2A2420">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/da4f86ae20.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+	crossorigin=""/>
+
+    <title>Café y comodidad</title>
+</head>
+<body>
+    <header class="header" id="home">
+		<div class="contenedor__navbar"> 
+			<nav class="navbar">
+                <div class="navbar__logo"></div>
+				<ul class="navbar__elementos">
+					<li><a href="#home">INICIO</a></li>
+					<li><a href="menu/menu.pdf" target="_blank">MENU</a></li>
+					<li><a href="#historia">SOBRE</a></li>
+					<li><a href="#ubicacion">UBICACIÓN</a></li>
+					<li><a href="#contacto">CONTACTO</a></li>
+					<div class="redes">
+						<a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</ul>
+			</nav>
+			<div class="navbar__menu">
+				<div class="bar"></div>
+			</div>
+		</div>
+	</header>
+
+	<header>
+        <nav class="navbar__activado">
+            <ul class="navbar__activado__elementos">
+                <li><a href="#home" class="inicio">INICIO</a></li>
+                <li><a href="menu/menu.pdf" target="_blank">MENU</a></li>
+                <li><a href="#historia">SOBRE</a></li>
+                <li><a href="#ubicacion">UBICACIÓN</a></li>
+				<li><a href="#contacto">CONTACTO</a></li>
+			</ul>
+        </nav>
+    </header>
+	<!-- elementos__activados -->
+
+
+	<div class="slider">
+		<div class="portada__comida">
+			<h1>Café y comodidad</h1>
+			<p>Un lugar acogedor para relajarse y disfrutar de una taza de café caliente</p>
+			<a href="menu/menu.pdf" class="boton-reservas" target="_blank">NUESTRA CARTA</a>
+		</div>
+		<div class="slider-container">
+			<div class="slider-item active image image1"></div>
+			  <div class="slider-item image image2"></div>
+			  <div class="slider-item image image3"></div>
+			  <div class="slider-item image image4"></div>
+		</div>
+		<div class="slider-controls">
+			<div class="slider-dots">
+			  <button class="slider-dot active" data-index="0"></button>
+			  <button class="slider-dot" data-index="1"></button>
+			  <button class="slider-dot" data-index="2"></button>
+			  <button class="slider-dot" data-index="3"></button>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+    <section class="seccion-historia" id="historia">
+        <h2 class="historia--titulo">HISTORIA</h2>
+        <div class="historia__contenedor">
+            <div class="historia--imagen"></div>
+            <div class="historia--texto">
+				<p>Bienvenido a nuestra cafetería, donde el aroma del café recién hecho te da la bienvenida al entrar. Nos enorgullece ofrecer una selección de café de alta calidad, así como una amplia variedad de opciones de desayuno, almuerzo y merienda.</p>
+				<br><br>
+				<p>Nuestro café es tostado y molido diariamente para asegurar que disfrutes de una taza de café recién preparado y delicioso. Ofrecemos una variedad de opciones de café, desde la clásica taza de café negro hasta capuchinos y lattes con diseños de arte latte. También ofrecemos opciones de té para aquellos que prefieren algo un poco más ligero.</p>
+				<br><br>
+				<p>Si vienes a visitarnos durante el desayuno, asegúrate de probar nuestro pan tostado francés o huevos benedictinos. Si te apetece algo más dulce, tenemos una variedad de pasteles, panecillos y muffins recién horneados. Nuestro menú de almuerzo ofrece una variedad de opciones, desde sándwiches y ensaladas hasta sopas y quiches.</p>
+				<br><br>
+				<p>Nuestra cafetería es el lugar perfecto para relajarse y disfrutar de una taza de café mientras trabajas o estudias. Ofrecemos acceso a Wi-Fi gratuito y tenemos una zona de estar cómoda y acogedora. También ofrecemos opciones para llevar si tienes prisa.</p>
+				<br><br>
+				<p>En nuestra cafetería, nos esforzamos por brindar un servicio amable y personalizado. Si tienes alguna pregunta o necesitas recomendaciones, no dudes en preguntarnos. ¡Nos encantaría ayudarte a encontrar la taza de café perfecta o el plato que satisfará tu apetito!</p>
+			</div>
+        </div>
+    </section>
+
+
+	<section class="nuestras-cartas">
+		<h2 class="cartas--titulo">Nuestro delicioso menú</h2>
+		<div class="cartas__contenedor">
+			<div class="carta carta1">
+				<div class="contenedor-img">
+					<img src="images/cafe4.webp" alt="" class="img1">
+				</div>
+				<h3>Café</h3>
+			</div>
+			<div class="carta carta2">
+				<div class="contenedor-img">
+					<img src="images/cafe6.webp" alt="" class="img2">
+				</div>
+				<h3>Bebidas</h3>
+			</div>
+			<div class="carta carta3">
+				<div class="contenedor-img">
+					<img src="images/tipo4.png" alt="" class="img3">
+				</div>
+				<h3>Pasteles</h3>
+			</div>
+			<div class="carta carta4">
+				<div class="contenedor-img">
+					<img src="images/tipo5.png" alt="" class="img4">
+				</div>
+				<h3>Sandwiches</h3>
+			</div>
+		</div>
+	</section>
+
+	<section class="seccion-catalogo">
+		<div class="image-beans"></div>
+		<div class="image-beans2"></div>
+		<h2 class="catalogo--titulo">MÁS POPULAR</h2>
+		<div class="catalogo__contenedor">
+				<div class="items__contenedor">
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe1.webp" alt="">
+						</div>
+						<h3>Expresso con crema</h3>
+						<p>Concentrado y fuerte.</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe2.webp" alt="">
+						</div>
+						<h3>Cappuccino</h3>
+						<p>Expresso, leche vaporizada, espuma de leche</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe3.webp" alt="">
+						</div>
+						<h3>Té de café</h3>
+						<p>Infusión de cascara dulce y afrutada.</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe4.webp" alt="">
+						</div>
+						<h3>Latte</h3>
+						<p>Expresso, leche vaporizada, espuma de leche.</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe5.webp" alt="">
+						</div>
+						<h3>Café con leche y dulce de leche</h3>
+						<p>Café con leche, espuma y dulce cremoso.</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe6.webp" alt="">
+						</div>
+						<h3>Lungo</h3>
+						<p>Expresso con más agua, menos concentrado.</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe7.webp" alt="">
+						</div>
+						<h3>Mousse de chocolate</h3>
+						<p>Postre denso y suave de chocolate.</p>
+					</div>
+					<div class="item__contenedor">
+						<div class="elemento">
+							<img src="images/cafe8.webp" alt="">
+						</div>
+						<h3>Affogato</h3>
+						<p>Helado de vainilla y expresso.</p>
+					</div>
+					<div class="item__contenedor item9">
+						<div class="elemento">
+							<img src="images/cafe9.webp" alt="">
+						</div>
+						<h3>Flat white</h3>
+						<p>Expresso, leche vaporizada, espuma de leche.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="seccion-direccion" id="ubicacion">
+		<h3 class="direccion--titulo">UBICACIÓN</h3>
+		<div class="contenedor__mapa-horarios">
+			<div class="informacion">
+				<div class="informacion__contenedor">
+					<address class="ubicacion">
+						<i class="fa-sharp fa-solid fa-location-dot" style="color: #a36147;"></i>
+						<p>PALERMO</p>
+						<p>Dirección</p>
+					</address>
+					<address class="telefono">
+						<i class="fa-solid fa-phone" style="color: #a36147;"></i>
+						<p>1234-5678</p>
+					</address>
+					<address class="email">
+						<i class="fa-solid fa-envelope" style="color: #a36147;"></i>
+						<p>cafeteria@gmail.com</p>
+					</address>
+						<div class="horarios">
+							<h3>HORARIOS</h3>
+							<div class="horarios__contenedor">
+								<div class="lunes-a-viernes horario">
+									<p><strong>Lunes-Viernes:</strong></p>
+									<p class="hora"> 12:00 a 1:00</p>
+								</div>
+								<div class="sabados horario">
+									<p><strong>Sábado:</strong></p>
+									<p class="hora"> 12:00 a 2:00</p>
+								</div>
+								<div class="domingo horario">
+									<p><strong>Domingo:</strong></p>
+									<p class="hora"> 12:00 a 1:00</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div id="map"></div>
+	</section>
+
+	<section class="contacto" id="contacto">
+		<div class="image-beans3"></div>
+		<div class="image-beans4"></div>
+
+		<div class="contenedor__form">
+			<form action="correo.php" method="post" class="contenedor__form2">
+            
+				<div class="contenedor__form__items">
+					<h2 class="contacto--titulo">¡CONTACTANOS!</h2>
+					<div class="form--nombre form">
+						<input type="text" name="nombre" placeholder="Tu nombre">
+					</div>
+					<div class="form--mail form">
+						<input type="text" name="email" placeholder="Tu mail">
+					</div>           
+					<div class="form--numero form">
+						<input type="number" name="numero" placeholder="Tu número">
+					</div>
+					<textarea name="mensaje" placeholder="Mensaje" class="form--mensaje"></textarea>
+				</div>
+	
+				<div class="form--boton">
+					<input type="button" name="Enviar" class="boton" value="ENVIAR MENSAJE">
+				</div>
+	
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-container">
+			<address class="footer-section">
+				<h4>Dirección</h4>
+				<ul>
+					<li>PALERMO</li>
+					<li>Direccion</li>
+					<li>Argentina</li>
+				</ul>
+			</address>
+			<div class="footer-section">
+				<h4>Horario</h4>
+				<ul>
+					<li>Lunes - Viernes: 9am - 8pm</li>
+					<li>Sábado: 10am - 6pm</li>
+					<li>Domingo: Cerrado</li>
+				</ul>
+			</div>
+			<address class="footer-section">
+				<h4>Contacto</h4>
+				<ul>
+					<li>Teléfono: 1234-5678</li>
+					<li>Email: info@restaurante.com</li>
+					<nav class="redes2">
+						<ul class="redes2--ul">
+							<a href="https://www.facebook.com" target="_blank"><div class="icono2 icono"></div></a>
+							<a href="https://www.instagram.com" target="_blank"><div class="icono1 icono"></div></a>
+						</ul>
+					</nav>
+				</ul>
+			</address>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2023 Restaurante. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+	integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+	crossorigin=""></script>
+	<script src="index.js"></script>
+</body>
+</html>

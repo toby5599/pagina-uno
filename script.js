@@ -130,7 +130,7 @@ document.addEventListener('click', (event) => {
 });
 
 
-let map = L.map('map', {scrollWheelZoom: false}).setView([-34.6992252, -58.5699618], 16);
+let map = L.map('map', {scrollWheelZoom: false}).setView([-34.58525189629299, -58.42176379921389], 16);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -138,4 +138,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-let marker = L.marker([-34.6992252, -58.5699618]).addTo(map);
+let marker = L.marker([-34.58525189629299, -58.42176379921389]).addTo(map);
